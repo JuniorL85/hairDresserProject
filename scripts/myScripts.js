@@ -24,3 +24,10 @@ mainApp.controller('myCtrl2', function($scope, $interval) {
           $scope.theTime = new Date().toLocaleTimeString();
       }, 1000);
 });
+
+mainApp.controller('myCtrl3', function($scope) {
+    $scope.name1 = "Petra Svensson";
+    $scope.name2 = "Vanessa Salazar";
+    $scope.name3 = "Michel Gusto";
+    $scope.name4 = "Farid Abdi";
+});

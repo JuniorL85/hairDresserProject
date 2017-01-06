@@ -16,7 +16,7 @@
       <h2>Hair & Makeup</h2>
     </div>
     <div ng-controller="myCtrl2">
-      <form action="#" method="post" align="right">
+      <form ng-hide="myVar" method="post" align="right">
         <h1 style="font-size:30px;">{{theTime}}</h1>
       </form>
     </div>
@@ -28,6 +28,7 @@
         <li><a href="#">Boka Online</a></li>
         <li><a href="galleri.html">Galleri</a></li>
         <li><a href="omOss.html">Om Oss</a></li>
+        <input type="checkbox" ng-model="myVar">
       </ul>
     </nav>
   </header>

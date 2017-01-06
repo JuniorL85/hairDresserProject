@@ -12,11 +12,11 @@
 <div class="wrapper row1">
   <header id="header" class="clear">
     <div id="hgroup">
-      <h1><a href="#">Salong Vannie</a></h1>
+      <h1>Salong Vannie</h1>
       <h2>Hair & Makeup</h2>
     </div>
     <div ng-controller="myCtrl2">
-      <form action="#" method="post" align="right">
+      <form method="post" align="right">
         <h1 style="font-size:30px;">{{theTime}}</h1>
       </form>
     </div>
@@ -34,7 +34,49 @@
 <!-- content -->
 <div class="wrapper row2">
   <div id="container" class="clear">
-    <h1 align="center">Om Oss</h1>
+    <div align="center">
+      <h2>Besök oss</h2>
+      <p>Testvägen 8</p>
+      <p>411 30 Göteborg</p>
+      <p>Telefonnummer: 031-171717</p>
+    </div>
+    <br><br>
+
+
+    <h1 align="center">Vi som jobbar här</h1>
+    <br><br>
+    <!-- article 1 -->
+    <div align="center" ng-controller="myCtrl3">
+      <article>
+        <img src="images/demo/profilbild.jpg" alt="">
+        <h2 ng-mouseover="style1={color:'red'}" ng-mouseleave="style1={color:'#979797'}" ng-style="style1">{{name1}}</h2>
+        <p>Här kommer lite info om medarbetaren Petra Svensson</p>
+        <p>Här kommer lite info om medarbetaren Petra Svensson</p>
+        <p>Här kommer lite info om medarbetaren Petra Svensson</p>
+      </article>
+      <article>
+        <img src="images/demo/profilbild.jpg" alt="">
+        <h2 ng-mouseover="style2={color:'red'}" ng-mouseleave="style2={color:'#979797'}" ng-style="style2">{{name2}}</h2>
+        <p>Här kommer lite info om medarbetaren Vanessa Salazar</p>
+        <p>Här kommer lite info om medarbetaren Vanessa Salazar</p>
+        <p>Här kommer lite info om medarbetaren Vanessa Salazar</p>
+      </article>
+      <article>
+        <img src="images/demo/profilbild.jpg" alt="">
+        <h2 ng-mouseover="style3={color:'red'}" ng-mouseleave="style3={color:'#979797'}" ng-style="style3">{{name3}}</h2>
+        <p>Här kommer lite info om medarbetaren Michel Gusto</p>
+        <p>Här kommer lite info om medarbetaren Michel Gusto</p>
+        <p>Här kommer lite info om medarbetaren Michel Gusto</p>
+      </article>
+      <article>
+        <img src="images/demo/profilbild.jpg" alt="">
+        <h2 ng-mouseover="style4={color:'red'}" ng-mouseleave="style4={color:'#979797'}" ng-style="style4">{{name4}}</h2>
+        <p>Här kommer lite info om medarbetaren Farid Abdi</p>
+        <p>Här kommer lite info om medarbetaren Farid Abdi</p>
+        <p>Här kommer lite info om medarbetaren Farid Abdi</p>
+      </article>
+    </div>
+
     </div>
   </div>
 </div>

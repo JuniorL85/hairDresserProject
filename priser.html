@@ -46,8 +46,8 @@
 
                      <tr ng-repeat = "x in test.subjects">
                       <td>{{ $index + 1 }}</td>
-                      <td align="center">{{ x.treatment }}</td>
-                      <td align="center">{{ x.price }}</td>
+                      <td align="center" ng-mouseover="style={color:'red'}" ng-mouseleave="style={color:'#979797'}" ng-style="style">{{ x.treatment }}</td>
+                      <td align="center" ng-mouseover="style={color:'red'}" ng-mouseleave="style={color:'#979797'}" ng-style="style">{{ x.price }}</td>
                      </tr>
 
                   </table>
